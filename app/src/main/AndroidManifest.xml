@@ -10,6 +10,11 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AdoptME">
         <activity
+            android:name=".ui.composable_screens.DogsCardScreen"
+            android:exported="false"
+            android:label="@string/title_activity_dogs_card_screen"
+            android:theme="@style/Theme.AdoptME" />
+        <activity
             android:name=".screens.HomeActivity"
             android:exported="false"
             android:label="@string/title_activity_home"

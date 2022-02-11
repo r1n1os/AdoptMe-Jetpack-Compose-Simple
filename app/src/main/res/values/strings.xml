@@ -1,4 +1,5 @@
 <resources>
     <string name="app_name">AdoptME</string>
     <string name="title_activity_home">HomeActivity</string>
+    <string name="title_activity_dogs_card_screen">DogsCardScreen</string>
 </resources>
