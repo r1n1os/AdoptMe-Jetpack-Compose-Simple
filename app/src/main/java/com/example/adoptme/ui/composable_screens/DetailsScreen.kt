@@ -1,5 +1,6 @@
 package com.example.adoptme.ui.composable_screens
 
+import android.widget.Toast
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.*
@@ -26,7 +27,6 @@ import androidx.compose.ui.unit.sp
 import androidx.navigation.NavController
 import com.example.adoptme.utils.colors.CustomColors
 import com.example.adoptme.utils.images.CustomIcons
-import com.example.adoptme.utils.showToast
 
 @Composable
 fun DetailsScreen(name: String, navController: NavController) {
@@ -306,7 +306,7 @@ fun DetailsScreen(name: String, navController: NavController) {
             .fillMaxWidth()
             .height(52.dp)
             .padding(start = 28.dp, end = 28.dp), colors = ButtonDefaults.buttonColors(backgroundColor = CustomColors.blue), shape = RoundedCornerShape(8.dp), onClick = {
-            showToast(context, "Adoption Done!") }) {
+            Toast.makeText(context, "Adoption Done!", Toast.LENGTH_LONG).show()}) {
             Text(
                 textAlign = TextAlign.Center,
                 text = "Adopt Me",
